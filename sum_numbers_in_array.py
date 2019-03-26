@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import time
 import unittest
 
 '''
@@ -35,4 +36,13 @@ class SolutionTest(unittest.TestCase):
         self.assertEqual(solution([1, 3, 6, 9], 7), [1, 6])
 
 if __name__ == "__main__":
+    start_time = time.time()
+
+    result = solution([1, 3, 6, 9], 7)
+
+    end_time = time.time()
+    print("Execution time:")
+    print(end_time - start_time)
+    print()
+
     unittest.main()
